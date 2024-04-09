@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Text</title>
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+    <link href="css/text.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<h1>Text - Style sheet CSS</h1>
+
+<h2>Specifying Typefaces <span>font-family</span></h2>
+<h3>font-family: Arial, Verdana, sans-serif;</h3>
+<p id="arial-font-family"> Hello World!</p>
+<h3>font-family: Georgia, Times, serif;</h3>
+<p id="georgia-font-family"> Hello World!</p>
+
+<hr />
+
+<h2>Size of Type <span>font-size</span></h2>
+<p class="size"> The default size of text in a
+    browser is 16 pixels. So if you
+    use percentages or ems, you
+    calculate the size of text you
+    want based on the default size
+    of the text used in browsers.
+    For example, you could scale
+    down to 12 pixels for body copy
+    and scale up to 24 pixels for
+    headings.</p>
+
+<h3>font-size: 16px;</h3>
+<p id="fontsize-16px"> Hello World!</p>
+<h3>font-size: 200%;</h3>
+<p id="fontsize-200-percent"> Hello World!</p>
+<h3>font-size: 1.5em;</h3>
+<p id="fontsize-1_5em"> Hello World!</p>
+
+<hr />
+
+<h2>More Font Choice <span>@font-face</span></h2>
+<h3>@font-face { <br />
+    font-family: 'ChunkFiveRegular'; <br />
+    src: url('fonts/chunkfive.eot'); <br />
+}</h3>
+
+<p><b>Usage:</b></p>
+<p>h1, h2 {
+    font-family: ChunkFiveRegular, Georgia, serif;}
+</p>
+
+<hr />
+
+<h2>Bold <span>font-weight</span></h2>
+<h3>font-weight: bold;</h3>
+<p id="font-weight-bold"> Hello World!</p>
+<h3>font-weight: normal;</h3>
+<p id="font-weight-normal"> Hello World!</p>
+
+<hr />
+
+<h2>Italic <span>font-style</span></h2>
+<h3>font-style: italic;</h3>
+<p id="font-style-italic"> Hello World!</p>
+<h3>font-style: normal;</h3>
+<p id="font-style-normal"> Hello World!</p>
+<h3>font-style: oblique;</h3>
+<p id="font-style-oblique"> Hello World!</p>
+
+<hr />
+
+<h2>UpperCase & LowerCase <span>text-transform</span></h2>
+<h3>text-transform: uppercase;</h3>
+<p id="text-transform-uppercase"> Hello World!</p>
+<h3>text-transform: lowercase;</h3>
+<p id="text-transform-lowercase"> Hello World!</p>
+<h3>text-transform: capitalize;</h3>
+<p id="text-transform-capitalize"> Hello World!</p>
+
+<hr />
+
+<h2>Underline & Strike <span>text-decoration</span></h2>
+<h3>text-decoration: none;</h3>
+<p id="text-decoration-none"> Hello World!</p>
+<h3>text-decoration: underline;</h3>
+<p id="text-decoration-underline"> Hello World!</p>
+<h3>text-decoration: overline;</h3>
+<p id="text-decoration-overline"> Hello World!</p>
+<h3>text-decoration: line-through;</h3>
+<p id="text-decoration-line-through"> Hello World!</p>
+<h3>text-decoration: blink;</h3>
+<p id="text-decoration-blink"> Hello World!</p>
+
+<hr />
+
+<h2>Leading <span>line-height</span></h2>
+use for the vertical space between lines of text.
+<h3>line-height: 1.8em;</h3>
+<p id="text-line-height">
+    The default size of text in a browser is 16 pixels. So if you use percentages or ems, you
+    calculate the size of text you want based on the default size of the text used in browsers.
+    For example, you could scale down to 12 pixels for body copy and scale up to 24 pixels for headings.
+    The default size of text in a browser is 16 pixels. So if you use percentages or ems, you
+    calculate the size of text you want based on the default size of the text used in browsers.
+    For example, you could scale down to 12 pixels for body copy and scale up to 24 pixels for headings.
+    The default size of text in a browser is 16 pixels. So if you use percentages or ems, you
+    calculate the size of text you want based on the default size of the text used in browsers.
+    For example, you could scale down to 12 pixels for body copy and scale up to 24 pixels for headings.
+    The default size of text in a browser is 16 pixels. So if you use percentages or ems, you
+    calculate the size of text you want based on the default size of the text used in browsers.
+    For example, you could scale down to 12 pixels for body copy and scale up to 24 pixels for headings.
+</p>
+
+<hr />
+
+<h2>Letter & Word Spacing <span>letter-spacing, word-spacing </span></h2>
+<h3>letter-spacing: 0.2em;</h3>
+<p id="text-letter-spacing"> Hello World!</p>
+<h3>word-spacing: 1em;</h3>
+<p id="text-word-spacing"> Hello World!</p>
+
+<hr />
+
+<h2>Alignment <span>text-align </span></h2>
+<h3>text-align: left;</h3>
+<p id="text-align-left"> Hello World!</p>
+<h3>text-align: right;</h3>
+<p id="text-align-right"> Hello World!</p>
+<h3>text-align: center;</h3>
+<p id="text-align-center"> Hello World!</p>
+<h3>text-align: justify;</h3>
+<p id="text-align-justify"> Hello World!</p>
+
+<hr />
+
+<h2>Vertical Alignment <span>vertical-align </span></h2>
+<p>
+    The vertical-align property is
+    a common source of confusion.
+    It is not intended to allow you to
+    vertically align text in the middle
+    of block level elements such as
+    &lt;p&gt; and &lt;div&gt;, although it does
+    have this effect when used with
+    table cells (the &lt;td&gt; and &lt;th&gt;
+    elements). <br />
+    It is more commonly used with
+    inline elements such as &lt;img&gt;,
+    &lt;em&gt;, or &lt;strong&gt; elements.
+</p>
+
+<h3>vertical-align: baseline;</h3>
+<p id="vertical-align-baseline"> Hello World!</p>
+<h3>vertical-align: sub;</h3>
+<p id="vertical-align-sub"> Hello World!</p>
+<h3>vertical-align: super;</h3>
+<p id="vertical-align-super"> Hello World!</p>
+<h3>vertical-align: top;</h3>
+<p id="vertical-align-top"> Hello World!</p>
+<h3>vertical-align: text-top;</h3>
+<p id="vertical-align-text-top"> Hello World!</p>
+<h3>vertical-align: middle;</h3>
+<p id="vertical-align-middle"> Hello World!</p>
+<h3>vertical-align: bottom;</h3>
+<p id="vertical-align-bottom"> Hello World!</p>
+<h3>vertical-align: text-bottom;</h3>
+<p id="vertical-align-text-bottom"> Hello World!</p>
+
+<hr />
+
+<h2>Indenting Text <span>text-indent </span></h2>
+<h3>text-indent: 20px;</h3>
+<p id="text-indent-val20">
+    The text-indent property allows you to indent the first line of text within an element.
+    The amount you want the line indented by can be specified in a number of ways but is usually
+    given in pixels or ems. It can take a negative value, which means it can be used to push text
+    off the browser window. </p>
+
+<h3>text-indent: 40px;</h3>
+<p id="text-indent-val40">
+    The text-indent property allows you to indent the first line of text within an element.
+    The amount you want the line indented by can be specified in a number of ways but is usually
+    given in pixels or ems. It can take a negative value, which means it can be used to push text
+    off the browser window. </p>
+
+<h3>text-indent: -20px;</h3>
+<p id="text-indent-val-20">
+    The text-indent property allows you to indent the first line of text within an element.
+    The amount you want the line indented by can be specified in a number of ways but is usually
+    given in pixels or ems. It can take a negative value, which means it can be used to push text
+    off the browser window. </p>
+
+<hr />
+
+<h2>CSS3: Drop Shadow <span>text-shadow </span></h2>
+<h3>text-shadow: 1px 1px 0px #000000;</h3>
+<p id="text-shadow_val1">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep.</p>
+
+<h3>text-shadow: 1px 1px 3px #666666;</h3>
+<p id="text-shadow_val2">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep.</p>
+
+<h3>text-shadow: 2px 2px 7px #111111;</h3>
+<p id="text-shadow_val3">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep.</p>
+
+<h3>text-shadow: -1px -2px #666666;</h3>
+<p id="text-shadow_val4">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep.</p>
+
+<h3>text-shadow: -1px -1px #666666;</h3>
+<p id="text-shadow_val5">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep.</p>
+
+<hr />
+
+<h2>First Letter or Line <span>:first-letter, :first-line </span> (pseudo-elements)</h2>
+<h3>p.intro:first-letter{
+    font-size: 200%;
+    }
+<br />
+    p.intro:first-line {
+    font-weight: bold;
+    }
+</h3>
+<p class="intro">The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep.
+    The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep.</p>
+
+<hr />
+
+<h2>Styling Links <span>:link, :visited </span> (pseudo-elements)</h2>
+<p> <b>:link</b> This allows you to set styles for links that have not yet been visited.</p>
+<p> <b>:visited</b> This allows you to set styles for links that have been clicked on. </p>
+<p> <b>:active</b> This is applied when an element is being activated by a user; for example, when a button is being pressed or a link being clicked.  </p>
+<h3>
+    a:link {
+    color: deeppink;
+    text-decoration: none;
+    }
+    <br />
+    a:visited {
+    color: green;
+    }
+    <br />
+    a:hover {
+    color: deeppink;
+    text-decoration: underline;
+    }
+    <br />
+    a:active {
+    color: darkcyan;
+    }
+</h3>
+<ul>
+    <li><a href="http://en.wikipedia.org/wiki/Basset_Hound">Basset Hound</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Beagle">Beagle</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bearded_Collie">Bearded Collie</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Beauceron">Beauceron</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bedlington_Terrier">Bedlington Terrier</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Belgian_Shepherd_Dog_(Groenendael)">Belgian Shepherd</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bergamasco_Shepherd">Bergamasco</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bichon_Frisé">Bichon Frise</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bloodhound">Bloodhound</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bolognese_(dog)">Bolognese</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Border_Collie">Border Collie</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Border_Terrier">Border Terrier</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Borzoi">Borzoi</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bouvier_des_Flandres">Bouvier des Flandres</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Briard">Briard</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bull_Terrier">Bull Terrier</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Bulldog">Bulldog</a></li>
+</ul>
+
+<hr />
+
+<h2>Responding to Users <span>:hover, :active, :focus </span> (pseudo-elements)</h2>
+<p> <b>:active</b> This is applied when an element is being activated by a user; for example, when a button is being pressed or a link being clicked.  </p>
+<h3>
+    input {
+    padding: 6px 12px 6px 12px;
+    border: 1px solid #665544;
+    color: #ffffff;}
+    <br />
+    input.submit:hover {
+    background-color: #665544;}
+    <br />
+    input.submit:active {
+    background-color: chocolate;}
+    <br />
+    input.text {
+    color: #cccccc;}
+    <br />
+    input.text:focus {
+    color: #665544;}
+</h3>
+<form>
+    <input type="text" class="text" value="Enter email address..." />
+    <input type="submit" class="submit" />
+</form>
+
+<hr />
+
+
+
+
+
+</body>
+</html>

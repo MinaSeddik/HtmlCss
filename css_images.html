@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Images</title>
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+
+    <style type="text/css">
+
+        body {
+            /*By default, a background image will repeat to fill the entire box*/
+            background-image: url("images/pattern.gif");
+
+            background-image: url("images/header.gif");
+            background-repeat: repeat-x;
+            /*background-repeat: repeat-y;*/
+            /*background-repeat: no-repeat;*/
+
+            /* The background-attachment property specifies whether a background image should stay in
+               one position or move as the user scrolls up and down the page. It can have one of two values:*/
+            background-attachment: fixed;
+            /*background-attachment: scroll;*/
+
+            background-image: url("images/tulip.gif");
+            background-position: 50% 50%;
+            background-position: center top;
+
+            /*shorthand for all of the other background properties*/
+            background: #ffffff url("images/tulip.gif") no-repeat top right;
+
+
+            /*color: white;*/
+            font-size: 120%;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        img.align-left {
+            float: left;
+            margin-right: 40px;
+            margin-bottom: 30px;
+        }
+
+        img.align-right {
+            float: right;
+            margin-left: 10px;
+        }
+
+        img.align-center {
+            display: block;
+            margin: 0px auto;
+        }
+
+        img.medium {
+            width: 250px;
+            height: 250px;
+        }
+
+
+        a.button {
+            height: 36px;
+            background-image: url("images/button-sprite.jpg");
+            text-indent: -9999px;
+
+            /* inline-block enables us to specify the width and/or of the element */
+            display: inline-block;
+        }
+
+        a#add-to-basket {
+            width: 174px;
+            background-position: 0px 0px;
+        }
+
+        a#framing-options {
+            width: 210px;
+            background-position: -175px 0px;
+        }
+
+        a#add-to-basket:hover {
+            background-position: 0px -40px;
+        }
+
+        a#framing-options:hover {
+            background-position: -175px -40px;
+        }
+
+        a#add-to-basket:active {
+            background-position: 0px -80px;
+        }
+
+        a#framing-options:active {
+            background-position: -175px -80px;
+        }
+
+        #gradient {
+            /* fallback color */
+            background-color: #66cccc;
+
+            /* fallback image */
+            background-image: url("images/fallback-image.png");
+
+            /* Firefox 3.6+ */
+            /*background-image: -moz-linear-gradient(#336666, #66cccc);*/
+
+            /* Safari 4+, Chrome 1+ */
+            /*background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#66cccc), to(#336666));*/
+
+            /* Safari 5.1+, Chrome 10+ */
+            background-image: -webkit-linear-gradient(#336666, #66cccc);
+
+            /* Opera 11.10+ */
+            /*background-image: -o-linear-gradient(#336666, #66cccc);*/
+
+            height: 150px;
+            width: 300px;
+        }
+    </style>
+
+
+</head>
+<body>
+<h2> Normal - No alignment </h2>
+<p style="font-size: 120%">
+    <img src="images/magnolia-medium.jpg" alt="Magnolia"/>
+    <b><i>Magnolia</i></b> is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser.
+</p>
+
+<br/>
+<hr/>
+<br/>
+
+<h2> Normal - Left alignment </h2>
+
+<p style="font-size: 120%">
+    <img src="images/magnolia-medium.jpg" alt="Magnolia" class="align-left medium"/>
+    <b><i>Magnolia</i></b> is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser.
+</p>
+
+<br/>
+<hr/>
+<br/>
+
+<h2> Normal - Right alignment </h2>
+
+<p style="font-size: 120%">
+    <img src="images/magnolia-medium.jpg" alt="Magnolia" class="align-right medium"/>
+    <b><i>Magnolia</i></b> is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content
+    in an organized manner.
+    The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser.
+</p>
+
+<br/>
+<hr/>
+<br/>
+
+<h2> Normal - Center alignment </h2>
+
+<p style="font-size: 120%; width: 80%;text-align: left;margin: auto">
+    <img src="images/magnolia-medium.jpg" alt="Magnolia" class="align-center medium"/>
+    <b><i>Magnolia</i></b> is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner.
+    The term comes from the word wiki, which means fast in Hawaiian. A wiki is a form of online
+    hypertext publication that is collaboratively edited and managed by its own audience directly through
+    a web browser is a large genus that contains over 200 flowering plant species A wiki
+    is a web-based collaborative platform that enables users to store, create and modify content
+    in an organized manner. The term comes from the word wiki wiki, which means fast in Hawaiian. A wiki is
+    a form of online hypertext publication that is collaboratively edited and managed by its own audience
+    directly through a web browser is a web-based collaborative platform that enables users to store, create and modify
+    content in an organized manner.
+
+</p>
+
+<br/>
+<hr/>
+<br/>
+
+<h2> Image Rollovers & Sprites </h2>
+
+<a class="button" id="add-to-basket" href="#">Add to basket</a>
+<a class="button" id="framing-options" href="#">Framing options</a>
+
+<br/>
+<br/>
+<hr/>
+<br/>
+
+<h2> CSS3: Gradients <span>background-image</span></h2>
+
+<div id="gradient">
+</div>
+
+
+
+</body>
+</html>

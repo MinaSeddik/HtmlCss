@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alignment Inside Div</title>
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+
+</head>
+<body style="background-color: white;">
+
+
+<div style="background-color: lightgrey;">
+    <p style="background-color: grey;"> this paragraph is inside div with no high or width specified</p>
+</div>
+
+<br />
+
+<div style="background-color: lightgrey; width: 700px;">
+    <p style="background-color: grey;"> this paragraph is inside div with width specified (No height specified)</p>
+</div>
+
+
+<br />
+
+<div style="background-color: lightgrey; height: 100px;">
+    <p style="background-color: grey;"> this paragraph is inside div with height specified (No width specified)</p>
+</div>
+
+<br />
+
+
+
+<div style="background-color: lightgrey;">
+    <p style="background-color: grey;text-align: center;"> this paragraph is inside div with no high or width specified - centered text</p>
+</div>
+
+<br />
+
+<div style="background-color: lightgrey; width: 700px;">
+    <p style="background-color: grey; text-align: center;"> this paragraph is inside div with width specified (No height specified) - centered text</p>
+</div>
+
+
+<br />
+
+<!--<div style="background-color: lightgrey; height: 100px;text-align: center;display: flex;justify-content: center;">-->
+<div style="background-color: lightgrey; height: 100px;text-align: center;margin: auto;">
+    <p style="background-color: grey;line-height: 100px;"> this paragraph is inside div with height specified (No width specified) - centered text</p>
+</div>
+
+<br />
+
+<div style="background-color: lightgrey; height: 100px;text-align: center;display: flex;justify-content: center;">
+    <span style="background-color: grey;line-height: 100px;"> this span is inside div with height specified (No width specified) - centered text</span>
+</div>
+
+
+<br />
+
+<div style="background-color: lightgrey; height: 100px;">
+    <img width="216" height="37" src="images/logo.png" alt="web site logo" title="my logo">
+    <img width="116" height="100" src="images/header-triangle.png" alt="web site logo" title="my logo">
+</div>
+
+
+<br />
+
+<div style="background-color: lightgrey; height: 100px;text-align: center;display: flex;justify-content: center;">
+    <img style="border: green solid;padding-top: 40px;" width="216" height="37" src="images/logo.png" alt="web site logo" title="my logo">
+    <img style="border: green solid;" width="116" height="100" src="images/header-triangle.png" alt="web site logo" title="my logo">
+</div>
+
+
+<br />
+
+<div style="background-color: lightgrey; height: 100px;padding: 0;margin: 0;">
+    <div style="background-color: #0088dd; height: inherit;width: 400px;margin: 0 auto 0 auto; padding: 0;">
+        <img style="padding-bottom: 25px;" width="216" height="37" src="images/logo.png" alt="web site logo" title="my logo">
+        <img style="" width="116" height="100" src="images/header-triangle.png">
+
+    </div>
+</div>
+
+
+</body>
+</html>

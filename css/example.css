@@ -1,0 +1,69 @@
+/* Global selector */
+* {
+    font-size: xx-large;
+}
+
+body {
+    border: solid blue;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    border: solid red;
+    color: brown;
+}
+
+h2 {
+    border: solid green;
+    color: chocolate;
+}
+
+/*Type Selector*/
+h1, h2 {
+    background-color: aquamarine;
+}
+
+p {
+    border: solid yellow;
+}
+
+/*Class Selector*/
+.note {
+}
+
+/*Class Selector*/
+p.note {
+}
+
+/*ID Selector*/
+#introduction {
+
+}
+
+/*Child Selector*/
+li > a {
+
+}
+
+
+/* Descendant Selector  -  not just a direct child of that element) */
+p a {
+
+}
+
+
+/*Adjacent Sibling  Selector - Matches an element that is the next sibling of another*/
+/*Targets the first <p> element after any <h1> element (but not other <p> elements)*/
+h1 + p {
+}
+
+
+/*General Sibling Selector*/
+/*If you had two <p> elements that are siblings of an <h1> element, this rule would apply to both*/
+h1 ~ p {
+}
+
+
+
+
+

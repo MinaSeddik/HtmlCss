@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boxes</title>
+    <link href="css/boxes.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+</head>
+<body>
+
+<h1>Boxes and Borders - Style sheet CSS</h1>
+
+<h2>Box Dimensions <span>width, height</span></h2>
+<h3>height: 300px; <br/> width: 300px;</h3>
+
+<div style="border: solid black">
+    <p style="border: solid blue">The Moog company pioneered the commercial
+        manufacture of modular voltage-controlled
+        analog synthesizer systems in the early
+        1950s.</p>
+</div>
+
+<br/>
+
+<div style="border: solid black; height: 300px;">
+
+    <div style="display: inline-block; background-color: #bbbbaa; height: 300px; width: 300px;">
+        <p style="height: 75%; width: 75%; background-color: #0088dd;">The Moog company pioneered the commercial
+            manufacture of modular voltage-controlled
+            analog synthesizer systems in the early
+            1950s.</p>
+    </div>
+
+    <div style="display: inline-block; background-color: #bbbbaa; height: 300px; width: 300px; ">
+        <p style="background-color: #2fff00; text-align: center; ">The Moog company pioneered the commercial
+            manufacture of modular voltage-controlled
+            analog synthesizer systems in the early
+            1950s.</p>
+    </div>
+
+
+</div>
+
+<hr/>
+
+<h2>Limiting Width and Height <span>min-width, max-width, min-height, max-height</span></h2>
+
+<h3>
+    min-width: 30px;
+    <br/>
+    max-width: 385px;
+    <br/>
+    min-height: 30px;
+    <br/>
+    max-height: 85px;
+</h3>
+
+<table border="1px">
+    <tr>
+        <th>Photo</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td><img src="images/rhodes.jpg" width="200" height="150" alt="Fender Rhodes" title="this is rhodes"/></td>
+        <td class="description">The Rhodes piano is an electro-mechanical piano, invented by Harold Rhodes during the
+            fifties and later manufactured in a number of models, first in collaboration with Fender and after 1965 by
+            CBS. It employs a piano-like keyboard with hammers that hit small metal tines, amplified by electromagnetic
+            pickups.
+        </td>
+        <td>$1400</td>
+    </tr>
+    <tr>
+        <td><img src="images/wurlitzer.jpg" width="200" height="150" alt="Wurlitzer EP200"/></td>
+        <td class="description">The Wurlitzer electric piano is an electro-mechanical piano, created by the Rudolph
+            Wurlitzer Company of Mississippi. The Wurlitzer company itself never called the instrument an "electric
+            piano", instead inventing the phrase "Electronic Piano" and using this as a trademark throughout the
+            production of the instrument. It employs a piano-like keyboard with hammers that hit small metal tines,
+            amplified by electromagnetic pickups.
+        </td>
+        <td>$1600</td>
+    </tr>
+    <tr>
+        <td><img src="images/clavinet.jpg" width="200" height="150" alt="Hohner Clavinet D6"/></td>
+        <td class="description">A Clavinet is an electronically amplified clavichord manufactured by the Hohner company.
+            Each key uses a rubber tip to perform a hammer on a string. Its distinctive bright staccato sound is often
+            compared to that of an electric guitar. Various models were produced over the years, including the models I,
+            II, L, C, D6, and E7.
+        </td>
+        <td>$1200</td>
+    </tr>
+</table>
+
+<hr/>
+
+<h2>Overflowing Content <span>overflow</span></h2>
+
+<h3>
+    min-width: 30px;
+    <br/>
+    max-width: 385px;
+    <br/>
+    min-height: 30px;
+    <br/>
+    max-height: 85px;
+    <br/>
+    overflow: hidden;
+</h3>
+
+<p class="overflow-test one">The Fender Stratocaster or "Strat"
+    is one of the most popular electric guitars of
+    all time, and its design has been copied by many
+    all time, and its design has been copied by many
+    all time, and its design has been copied by many
+    all time, and its design has been copied by many
+    all time, and its design has been copied by many
+    all time, and its design has been copied by many
+    guitar makers. It was designed by Leo... </p>
+
+<br/>
+
+<h3>
+    min-width: 30px;
+    <br/>
+    max-width: 385px;
+    <br/>
+    min-height: 30px;
+    <br/>
+    max-height: 85px;
+    <br/>
+    overflow: scroll;
+</h3>
+<p class="overflow-test two">The Gibson Les Paul is a solid body
+    electric guitar that was first sold in 1952.
+    electric guitar that was first sold in 1952.
+    electric guitar that was first sold in 1952.
+    electric guitar that was first sold in 1952.
+    electric guitar that was first sold in 1952.
+    electric guitar that was first sold in 1952.
+    The Les Paul was designed by Ted McCarty... </p>
+
+<hr/>
+
+<h2>Border Width <span>border-width</span></h2>
+
+<h3>
+    border-width: 2px;
+    <br/>
+    border-width: thin;
+    <br/>
+    border-width: medium;
+    <br/>
+    border-width: thick;
+    <br/>
+    border-width: 1px 4px 12px 4px;
+</h3>
+
+
+<h4>
+    border-top-width
+    <br/>
+    border-right-width
+    <br/>
+    border-bottom-width
+    <br/>
+    border-left-width
+</h4>
+
+
+<p class="bone">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+<p class="btwo">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+<p class="bthree">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+
+<hr/>
+
+<h2>Border Style <span>border-style</span></h2>
+
+<h3>
+    border-style: solid;
+    <br/>
+    border-style: dotted;
+    <br/>
+    border-style: dashed;
+    <br/>
+    border-style: double;
+    <br/>
+    border-style: groove;
+    <br/>
+    border-style: ridge;
+    <br/>
+    border-style: inset;
+    <br/>
+    border-style: outset;
+    <br/>
+    border-style: hidden / none;
+</h3>
+
+You can individually change the styles of different borders using:
+<h4>
+    border-top-style
+    <br/>
+    border-left-style
+    <br/>
+    border-right-style
+    <br/>
+    border-bottom-style
+</h4>
+
+
+<p class="bs-one">Wurlitzer Electric Piano</p>
+<p class="bs-two">Wurlitzer Electric Piano</p>
+<p class="bs-three">Wurlitzer Electric Piano</p>
+<p class="bs-four">Wurlitzer Electric Piano</p>
+<p class="bs-five">Wurlitzer Electric Piano</p>
+<p class="bs-six">Wurlitzer Electric Piano</p>
+<p class="bs-seven">Wurlitzer Electric Piano</p>
+<p class="bs-eight">Wurlitzer Electric Piano</p>
+
+<hr/>
+
+<h2>Border Color <span>border-color</span></h2>
+
+<h3>
+    border-color: #0088dd;
+    <br/>
+    border-color: #bbbbaa #111111 #ee3e80 #0088dd;
+</h3>
+
+You can individually change the color of different borders using:
+<h4>
+    border-top-color
+    <br/>
+    border-right-color
+    <br/>
+    border-bottom-color
+    <br/>
+    border-left-color
+</h4>
+
+<p class="cl-one">The ARP Odyssey was introduced in 1972.</p>
+<p class="cl-two">The ARP Odyssey was introduced in 1972.</p>
+
+<hr/>
+
+<h2>Shorthand <span>border</span></h2>
+
+<h3>
+    border: 3px dotted #0088dd; <span style="color: #0088dd">(width style color) </span>
+</h3>
+
+
+<p id="pborder">Here is a simple chord sequence played on a Hammond organ through a Leslie speaker.</p>
+
+<hr/>
+
+<h2>Padding <span>padding</span></h2>
+
+<h3>
+    padding: 10px;
+    <br/>
+    padding: 10px 5px 3px 1px;
+</h3>
+
+<h4>
+    padding-top
+    <br/>
+    padding-right
+    <br/>
+    padding-bottom
+    <br/>
+    padding-left
+</h4>
+
+<p class="no-padding-example">Analog synths produce a wave sound, whereas the
+    sounds stored on a digital synth have been
+    sampled and then turned into numbers.</p>
+
+<p class="padding-example">Analog synths produce a wave
+    sound, whereas the sounds stored on a digital
+    synth have been sampled and then ... </p>
+
+<hr/>
+
+<h2>Margin <span>margin</span></h2>
+
+<h3>
+    margin: 10px;
+    <br/>
+    margin: 10px 5px 3px 1px;
+</h3>
+
+<h4>
+    margin-top
+    <br/>
+    margin-right
+    <br/>
+    margin-bottom
+    <br/>
+    margin-left
+</h4>
+
+<p class="no-margin-example">Analog synths produce a wave sound, whereas the
+    sounds stored on a digital synth have been
+    sampled and then turned into numbers.</p>
+
+<p class="margin-example">Analog synths produce a wave
+    sound, whereas the sounds stored on a digital
+    synth have been sampled and then ... </p>
+
+<hr/>
+
+<h2>Centering Content <span>left-margin: auto, right-margin: auto</span></h2>
+
+<h3>
+    margin: auto;
+</h3>
+
+<div style="border: solid black;">
+    <div style="border: solid red;">
+        <p style="border: 2px solid #0088dd; width: 300px;">Analog synthesizers are often said to have a
+            "warmer" sound than their digital
+            counterparts.</p>
+    </div>
+    <div style="border: solid red;">
+        <p class="centering-example">Analog synthesizers are often
+            said to have a "warmer" sound than their
+            digital counterparts.</p>
+    </div>
+
+</div>
+
+<hr/>
+
+<h2>Change Inline/Block <span>display</span></h2>
+
+<h3>
+    display: inline;
+    <br/>
+    display: block;
+    <br/>
+    display: inline-block;
+    <br/>
+    display: none;
+</h3>
+
+<ul class="display-style">
+    <li>Home</li>
+    <li>Products</li>
+    <li class="coming-soon">Services</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+
+
+<ul class="display-style"
+    style="font-size: 20px; font-style: italic; font-weight: bold; color: #0088dd; text-align: right;">
+    <li>Home</li>
+    <li>Products</li>
+    <li class="coming-soon">Services</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+
+<hr/>
+
+<h2>Hiding Boxes <span>visibility</span></h2>
+
+<h3>
+    visibility: hidden;
+    <br/>
+    visibility: visible;
+</h3>
+
+<ul class="visibility-style">
+    <li>Home</li>
+    <li>Products</li>
+    <li class="coming-soon">Services</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+
+<hr/>
+
+<h2>CSS3: Border Images <span>border-image</span></h2>
+
+<p class="border-image border-image-one"></p>
+<p class="border-image border-image-two"></p>
+<p class="border-image border-image-three"></p>
+
+<hr/>
+
+<h2>CSS3: Box Shadows <span>box-shadow</span></h2>
+
+<p class="p-shadow shadow-one"></p>
+<p class="p-shadow shadow-two"></p>
+<p class="p-shadow shadow-three"></p>
+<br/>
+<p class="p-shadow shadow-four"></p>
+<p class="p-shadow shadow-five"></p>
+
+<hr/>
+
+<h2>CSS3: Rounded Corners <span>border-radius</span></h2>
+<h3>
+    border-radius: 10px;
+    <br/>
+    border-radius: 5px, 10px, 5px, 10px;
+</h3>
+
+<h4>
+    border-top-right-radius
+    <br/>
+    border-bottom-right-radius
+    <br/>
+    border-bottom-left-radius
+    <br/>
+    border-top-left-radius
+</h4>
+
+<p id="radius-border">Pet Sounds featured a number of unconventional
+    instruments such as bicycle bells, buzzing
+    organs, harpsichords, flutes, Electro-Theremin,
+    dog whistles, trains, Hawaiian-sounding string
+    instruments, Coca-Cola cans and barking dogs.</p>
+
+
+<p id="radius-border2">Pet Sounds featured a number of unconventional
+    instruments such as bicycle bells, buzzing
+    organs, harpsichords, flutes, Electro-Theremin,
+    dog whistles, trains, Hawaiian-sounding string
+    instruments, Coca-Cola cans and barking dogs.</p>
+
+<hr/>
+
+<h2>CSS3: Elliptical Shapes <span>border-radius</span></h2>
+<h3>
+    border-top-left-radius: 80px 50px;
+    <br/>
+    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+</h3>
+
+<p class="elliptical-one"></p>
+<p class="elliptical-two"></p>
+<p class="elliptical-three"></p>
+<p class="circle"></p>
+
+<p class="circle-fill">N</p>
+
+<br />
+
+<p class="circle-fill">1</p>
+<p class="circle-fill">2</p>
+<p class="circle-fill">3</p>
+
+<hr/>
+
+
+
+
+</body>
+</html>
