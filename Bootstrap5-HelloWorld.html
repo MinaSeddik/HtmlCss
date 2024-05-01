@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<html lang="en" data-bs-theme="dark">-->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome to Bootstrap 5</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+
+
+    <!-- Bootstrap 5 -->
+    <!--    <link type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!--  Using CDN-->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+
+
+</head>
+<body>
+<!--<body class="bg-secondary">-->
+
+
+<h1>Welcome to Bootstrap 5!</h1>
+
+<div class="p-3 text-primary-emphasis
+bg-primary-subtle border border-danger-subtle rounded-4 ">
+    Example element with utilities
+</div>
+
+<br/>
+<br/>
+
+<div class="dropdown" data-bs-theme="light">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
+            data-bs-toggle="dropdown" aria-expanded="false">
+        Default dropdown
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+        <li><a class="dropdown-item active" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+</div>
+
+<div class="dropdown" data-bs-theme="dark">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark"
+            data-bs-toggle="dropdown" aria-expanded="false">
+        Dark dropdown
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
+        <li><a class="dropdown-item active" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+</div>
+
+<br/>
+<br/>
+
+<div class="container bg-info">
+    <div class="row">
+        <div class="col-md-4 bg-primary">AAA</div>
+        <div class="col-md-4 bg-success">BBB</div>
+        <div class="col-md-4 bg-danger">CCC</div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container-fluid bg-info">
+    <div class="row">
+        <div class="col-md-4 bg-primary">AAA</div>
+        <div class="col-md-4 bg-success">BBB</div>
+        <div class="col-md-4 bg-danger">CCC</div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container text-center border border-danger">
+    <div class="row">
+        <div class="col">
+            Column
+        </div>
+        <div class="col">
+            Column
+        </div>
+        <div class="col">
+            Column
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container text-center border border-danger">
+    <div class="row g-3">
+        <div class="col">
+            Column
+        </div>
+        <div class="col">
+            Column
+        </div>
+        <div class="col">
+            Column
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container text-center">
+    <div class="row justify-content-md-center bg-primary bg-info-subtle">
+        <div class="col col-lg-2 border border-danger">
+            1 of 3
+        </div>
+        <div class="col-lg-auto">
+            Variable width content (to size columns based on the natural width of their content.)
+            Variable width content (to size columns based on the natural width of their content.)
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container-sm bg-primary">100% wide until small breakpoint</div>
+<div class="container-md bg-primary">100% wide until medium breakpoint</div>
+<div class="container-lg bg-primary">100% wide until large breakpoint</div>
+<div class="container-xl bg-primary">100% wide until extra large breakpoint</div>
+<div class="container-xxl bg-primary">100% wide until extra extra large breakpoint</div>
+
+<br/>
+<br/>
+
+<div class="container overflow-hidden text-center">
+    <div class="row gx-5">
+        <div class="col border border-danger">
+            <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col border border-danger">
+            <div class="p-3">Custom column padding</div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container ">
+    <div class="row g-5">
+        <div class="col-6 border border-danger">
+            <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col-6 border border-danger">
+            <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col-6 border border-danger">
+            <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col-6 border border-danger">
+            <div class="p-3">Custom column padding</div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<hr>
+
+<div class="text-success">
+    <hr>
+</div>
+
+<hr class="border border-danger border-2 opacity-50">
+<hr class="border border-primary border-3 opacity-75">
+<hr class="border border-primary border-3">
+<hr class="border border-primary border-3 opacity-100">
+
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+
+<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+</code></pre>
+
+To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>
+
+<br/>
+
+<span role="button" tabindex="0">Non-button element button</span>
+
+<br/>
+<br/>
+
+<address>
+    <strong>ACME Corporation</strong><br>
+    1123 Fictional St,<br>
+    San Francisco, CA 94103<br>
+    <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<br/>
+<br/>
+
+<form class="bd-example">
+    <fieldset>
+        <legend>Example legend</legend>
+        <p>
+            <label for="input">Example input</label>
+            <input type="text" id="input" placeholder="Example input">
+        </p>
+        <p>
+            <label for="email">Example email</label>
+            <input type="email" id="email" placeholder="test@example.com">
+        </p>
+        <p>
+            <label for="tel">Example telephone</label>
+            <input type="tel" id="tel">
+        </p>
+        <p>
+            <label for="url">Example url</label>
+            <input type="url" id="url">
+        </p>
+        <p>
+            <label for="number">Example number</label>
+            <input type="number" id="number">
+        </p>
+        <p>
+            <label for="search">Example search</label>
+            <input type="search" id="search">
+        </p>
+        <p>
+            <label for="range">Example range</label>
+            <input type="range" id="range" min="0" max="10">
+        </p>
+        <p>
+            <label for="file">Example file input</label>
+            <input type="file" id="file">
+        </p>
+        <p>
+            <label for="select">Example select</label>
+            <select id="select">
+                <option value="">Choose...</option>
+                <optgroup label="Option group 1">
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                    <option value="">Option 4</option>
+                    <option value="">Option 5</option>
+                    <option value="">Option 6</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" value="">
+                Check this checkbox
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Option one is this and that
+            </label>
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two is something else that's also super long to demonstrate the wrapping of these fancy form
+                controls.
+            </label>
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                Option three is disabled
+            </label>
+        </p>
+        <p>
+            <label for="textarea">Example textarea</label>
+            <textarea id="textarea" rows="3"></textarea>
+        </p>
+        <p>
+            <label for="date">Example date</label>
+            <input type="date" id="date">
+        </p>
+        <p>
+            <label for="time">Example time</label>
+            <input type="time" id="time">
+        </p>
+        <p>
+            <label for="password">Example password</label>
+            <input type="password" id="password">
+        </p>
+        <p>
+            <label for="datetime-local">Example datetime-local</label>
+            <input type="datetime-local" id="datetime-local">
+        </p>
+        <p>
+            <label for="week">Example week</label>
+            <input type="week" id="week">
+        </p>
+        <p>
+            <label for="month">Example month</label>
+            <input type="month" id="month">
+        </p>
+        <p>
+            <label for="color">Example color</label>
+            <input type="color" id="color">
+        </p>
+        <p>
+            <label for="output">Example output</label>
+            <output name="result" id="output">100</output>
+        </p>
+        <p>
+            <button type="submit">Button submit</button>
+            <button type="reset">Button Reset</button>
+
+            <input type="submit" value="Input submit button">
+            <input type="reset" value="Input reset button">
+            <input type="button" value="Input button">
+        </p>
+        <p>
+            <button type="submit" disabled="">Button submit</button>
+            <input type="submit" value="Input submit button" disabled="">
+            <input type="reset" value="Input reset button" disabled="">
+            <input type="button" value="Input button" disabled="">
+        </p>
+    </fieldset>
+</form>
+
+<br/>
+<br/>
+
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+
+<p class="h1">h1. Bootstrap heading</p>
+<p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
+<p class="h4">h4. Bootstrap heading</p>
+<p class="h5">h5. Bootstrap heading</p>
+<p class="h6">h6. Bootstrap heading</p>
+
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1>
+
+<p class="lead">
+    This is a lead paragraph. It stands out from regular paragraphs.
+</p>
+
+
+<p>You can use the mark tag to
+    <mark>highlight</mark>
+    text.
+</p>
+<p>
+    <del>This line of text is meant to be treated as deleted text.</del>
+</p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p>
+    <ins>This line of text is meant to be treated as an addition to the document.</ins>
+</p>
+<p><u>This line of text will render as underlined.</u></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><strong>This line rendered as bold text.</strong></p>
+<p><em>This line rendered as italicized text.</em></p>
+
+<div class="container">
+    <img src="images/clavinet.jpg" class="img-fluid img-thumbnail rounded float-start" alt="...">
+    <p style="text-align: justify;"> This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+        This line of text is meant to be treated as no longer accurate
+    </p>
+</div>
+
+<br/>
+<br/>
+
+<table class="table table-sm">
+    <caption>List of users</caption>
+    <thead>
+    ...
+    </thead>
+    <tbody>
+    ...
+    </tbody>
+</table>
+
+
+<br/>
+<br/>
+
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 border border-info">
+            <label for="exampleFormControlInput2" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+        </div>
+        <div class="col-lg-6 border border-danger">
+            <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row align-items-end">
+    <div class="col-auto border border-danger">
+        <label for="inputPassword6" class="col-form-label">Password</label>
+    </div>
+    <div class="col-auto border border-danger">
+        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+    </div>
+    <div class="col-auto border border-danger">
+    <span id="passwordHelpInline" class="form-text">
+      Must be 8-20 characters long.
+    </span>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="text" readonly class="form-control-plaintextd" id="staticEmail" value="email@example.com">
+    </div>
+</div>
+<div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword">
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+    <label class="form-check-label" for="flexCheckIndeterminate">
+        Indeterminate checkbox
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+        Default checkbox
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+        Checked checkbox
+    </label>
+</div>
+
+<br/>
+<br/>
+
+<form class="bd-example">
+    <fieldset>
+        <legend>Example legend</legend>
+        <p>
+            <label class="form-check-label" for="xx">
+                Text Field
+            </label>
+            <input type="text" class="form-control" id="xx" placeholder="Example text input">
+        </p>
+        <p>
+            <label class="form-check-label" for="yy">
+                Text Field
+            </label>
+            <input type="email" class="form-control" id="yy" placeholder="Example email input">
+        </p>
+        <p>
+            <label class="form-check-label" for="yy">
+                Text Field
+            </label>
+            <input type="tel" class="form-control" id="tt" placeholder="Example tel input">
+        </p>
+        <p>
+            <label class="form-check-label" for="uu">
+                Text Field
+            </label>
+            <input type="url" class="form-control" id="uu" placeholder="Example url input">
+        </p>
+        <p>
+            <label class="form-check-label" for="uu">
+                Text Field
+            </label>
+            <input type="number" class="form-control" id="nn" placeholder="Example Number input">
+        </p>
+        <p>
+            <label class="form-check-label" for="ss">
+                Text Field
+            </label>
+            <input type="search" class="form-control" id="ss" placeholder="Example Search input">
+        </p>
+        <p>
+            <label for="customRange1" class="form-label">Example range</label>
+            <input type="range" class="form-range" id="customRange1">
+        </p>
+
+
+        <p>
+            <label for="file">Example file input</label>
+            <input type="file" id="file">
+        </p>
+        <p>
+            <label for="select">Example select</label>
+            <select id="select">
+                <option value="">Choose...</option>
+                <optgroup label="Option group 1">
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                    <option value="">Option 4</option>
+                    <option value="">Option 5</option>
+                    <option value="">Option 6</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" value="">
+                Check this checkbox
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Option one is this and that
+            </label>
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two is something else that's also super long to demonstrate the wrapping of these fancy form
+                controls.
+            </label>
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                Option three is disabled
+            </label>
+        </p>
+        <p>
+            <label for="textarea">Example textarea</label>
+            <textarea id="textarea" rows="3"></textarea>
+        </p>
+        <p>
+            <label class="form-check-label" for="dd">
+                Text Field
+            </label>
+            <input type="date" class="form-control" id="dd" placeholder="Example Date input">
+        </p>
+        <p>
+            <label for="time">Example time</label>
+            <input type="time" id="time">
+        </p>
+        <p>
+            <label for="password">Example password</label>
+            <input type="password" id="password">
+        </p>
+        <p>
+            <label for="datetime-local">Example datetime-local</label>
+            <input type="datetime-local" id="datetime-local">
+        </p>
+        <p>
+            <label for="week">Example week</label>
+            <input type="week" id="week">
+        </p>
+        <p>
+            <label for="month">Example month</label>
+            <input type="month" id="month">
+        </p>
+        <p>
+            <label for="color">Example color</label>
+            <input type="color" id="color">
+        </p>
+        <p>
+            <label for="output">Example output</label>
+            <output name="result" id="output">100</output>
+        </p>
+        <p>
+            <button type="submit">Button submit</button>
+            <button type="reset">Button Reset</button>
+
+            <input type="submit" value="Input submit button">
+            <input type="reset" value="Input reset button">
+            <input type="button" value="Input button">
+        </p>
+        <p>
+            <button type="submit" disabled="">Button submit</button>
+            <input type="submit" value="Input submit button" disabled="">
+            <input type="reset" value="Input reset button" disabled="">
+            <input type="button" value="Input button" disabled="">
+        </p>
+    </fieldset>
+</form>
+
+<br/>
+<br/>
+
+<div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+</div>
+
+<div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" rows="5"></textarea>
+    <label for="floatingTextarea">Add Comment</label>
+</div>
+
+<div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Leave a comment here"
+              id="floatingTextarea2Disabled" style="height: 100px">Disabled textarea with some text inside</textarea>
+    <label for="floatingTextarea2Disabled">Comments</label>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row g-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+
+    <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+
+    <br/>
+    <br/>
+
+    <button type="button" class="btn btn-secondary position-relative">
+        Profile
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+        <span class="visually-hidden">New alerts</span>
+      </span>
+    </button>
+
+</div>
+
+<br/>
+<br/>
+
+<div class="card text-bg-dark">
+    <img src="images/clavinet.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+        <h1 class="card-title">Card title</h1>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+            This content is a little bit longer.</p>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
+
+    </div>
+</div>
+
+<button type="button" class="btn-close" aria-label="Close"></button>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="dropdown">
+
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    Centered dropdown
+                </button>
+
+
+                <ul class="dropdown-menu dropdown-menu">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+<br/> <br/> <br/> <br/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>-->
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>-->
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+
+
+<noscript>Your browser does not support JavaScript!</noscript>
+
+</body>
+</html>

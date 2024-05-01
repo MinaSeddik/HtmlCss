@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Arrow Link</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+    <!-- Bootstrap -->
+    <!--    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.css" rel="stylesheet">-->
+
+    <style>
+
+
+        .borders {
+            width: 0px;
+            height: 0;
+            border-width: 50px;
+            border-color: red blue green yellow;
+            border-style: solid;
+        }
+
+
+        .triangle-up {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid red;
+        }
+
+        .triangle-down {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid red;
+        }
+
+        .triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid red;
+        }
+
+        .triangle-left {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-right: 50px solid red;
+        }
+
+        .triangle-right-small {
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 14px solid blue;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .triangle-down-small {
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 14px solid blue;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        span {
+            color: dodgerblue;
+            font-size: 1.2rem;
+            padding-left: 3px;
+            cursor: pointer;
+        }
+
+        .hide-info-section{
+            display: none;
+        }
+
+        .show-info-section{
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1> CSS Triangles</h1>
+
+<h2> How CSS renders borders ?!</h2>
+<div class="borders"></div>
+<br/>
+
+<h2> Triangle UP</h2>
+<div class="triangle-up"></div>
+<br/>
+
+<h2> Triangle DOWN</h2>
+<div class="triangle-down"></div>
+<br/>
+
+<h2> Triangle RIGHT</h2>
+<div class="triangle-right"></div>
+<br/>
+
+<h2> Triangle LEFT</h2>
+<div class="triangle-left"></div>
+
+<br/><br/>
+
+<div id="arrow" onclick="toggleInfo()" class="triangle-right-small">
+</div>
+<span onclick="toggleInfo()">Show components requiring JavaScript</span>
+<div id="info-section" class="hide-info-section">
+    <ul>
+        <li> Alerts for dismissing </li>
+        <li> Alerts for dismissing </li>
+        <li> Buttons for toggling states and checkbox/radio functionality </li>
+        <li> Carousel for all slide behaviors, controls, and indicators </li>
+        <li> Collapse for toggling visibility of content </li>
+        <li> Dropdowns for displaying and positioning (also requires Popper) </li>
+        <li> Modals for displaying, positioning, and scroll behavior </li>
+        <li> Navbar for extending our Collapse plugin to implement responsive behavior </li>
+        <li> Scrollspy for scroll behavior and navigation updates </li>
+        <li> Tooltips and popovers for displaying and positioning (also requires Popper) </li>
+    </ul>
+
+</div>
+
+
+<h2> Remaining page data ... </h2>
+<p>
+    Be sure to have your pages set up with the latest design and development standards.
+    That means using an HTML5 doctype and including a viewport meta tag for proper responsive
+    behaviors. Put it all together and your pages should look like this:
+</p>
+
+
+<script>
+
+    function toggleInfo() {
+        console.log("Hello! I'm here");
+        const arrowElement = document.getElementById("arrow");
+        const infoSectionElement = document.getElementById("info-section");
+        console.log("Element: " + arrowElement);
+        console.log("Element: " + infoSectionElement);
+        // arrowElement.style.color = "red";
+        // arrowElement.style.borderLeft = "14px solid red";
+        if (arrowElement.classList.contains("triangle-right-small")) {
+            arrowElement.classList.remove("triangle-right-small");
+            arrowElement.classList.add("triangle-down-small");
+
+            infoSectionElement.classList.remove("hide-info-section");
+            infoSectionElement.classList.add("show-info-section");
+
+        }else {
+            arrowElement.classList.remove("triangle-down-small");
+            arrowElement.classList.add("triangle-right-small");
+
+            infoSectionElement.classList.remove("show-info-section");
+            infoSectionElement.classList.add("hide-info-section");
+        }
+    }
+
+</script>
+</body>
+</html>

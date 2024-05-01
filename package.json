@@ -1,0 +1,24 @@
+{
+  "name": "htmlcss",
+  "version": "1.0.0",
+  "description": "My Html, css, SCSS, JavaScript and more front-end training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinaSeddik/HtmlCss.git"
+  },
+  "author": "Mina Ibrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinaSeddik/HtmlCss/issues"
+  },
+  "homepage": "https://github.com/MinaSeddik/HtmlCss#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.75.0"
+  }
+}

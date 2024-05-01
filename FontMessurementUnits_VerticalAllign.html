@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font Measurement units</title>
+
+    <style type="text/css" >
+/*        HTML {font-size: 62.5%; } *//* Now `rem` is equivalent to `10px` */
+/*        BODY {font-size: 62.5%; } *//* Does NOT affect `rem` */
+    </style>
+</head>
+<body>
+
+
+<p> Hello Mina, I'm here  - No style defaulted to web browser settings</p>
+<p style="font-size: 12px;"> Hello Mina, I'm here - 12 px </p>
+<p style="font-size: 14px;"> Hello Mina, I'm here - 14 px </p>
+<p style="font-size: 16px;"> Hello Mina, I'm here - 16 px </p>
+<p style="font-size: 1em;"> Hello Mina, I'm here - 1 em </p>
+
+<br />
+
+<p style="font-size: 18px;"> Hello Mina, I'm here - 18 px </p>
+<p style="font-size: 1.2em;"> Hello Mina, I'm here - 1.2 em </p>
+
+<br />
+
+<p style="font-size: 30px;"> Hello Mina, I'm here - 30 px </p>
+<p style="font-size: 36px;"> Hello Mina, I'm here - 36 em </p>
+
+<br />
+
+<div style="font-size: 30px;">
+    <!--    36 px-->
+    <p style="font-size: 1.2em;"> Hello Mina, I'm here - 1.2 em </p>
+</div>
+
+<br />
+
+<div style="font-size: 30px;">
+    <!--    16 px-->
+    <p style="font-size: 1.2rem;"> Hello Mina, I'm here - (1.2 rem = 16*1.2) </p>
+    <p>The rem unit is based on the font size of the HTML element, not the BODY (30px font size of parent element)</p>
+</div>
+
+<br />
+
+<p> this is block element</p>
+<img alt="test inline with block" src="images/bird.gif">
+
+<br />
+
+<div>
+    <p> this is block element</p>
+    <img alt="test inline with block" src="images/bird.gif">
+</div>
+
+<span> this is inline element</span>
+<img alt="test inline with block" src="images/bird.gif">
+
+<br />
+
+<div>
+    <span> this is inline element</span>
+    <img alt="test inline with block" src="images/bird.gif">
+</div>
+
+<br />
+
+
+<div style="display: inline-block;">
+    <span> this is inline element</span>
+    <img alt="test inline within inline-block" src="images/bird.gif">
+</div>
+
+<br />
+
+<div style="display: inline-block;">
+    <span style="display: inline-block;"> this is inline element</span>
+    <img alt="test inline within inline-block" src="images/bird.gif">
+</div>
+
+<br />
+
+<div style="display: inline-block;">
+    <span style="display: inline-block;"> this is inline element</span>
+    <img style="display: inline-block;" alt="test inline within inline-block" src="images/bird.gif">
+</div>
+
+<br />
+
+<div style="border: solid black;">
+    <span style="display:inline-block; border: solid red;"> this is inline element</span>
+    <img style="vertical-align: middle;" alt="test inline with block" src="images/bird.gif">
+</div>
+
+<br />
+
+<div style="border: solid black;">
+    <span style="border: solid red;"> this is inline element</span>
+    <img style="vertical-align: middle;" alt="test inline with block" src="images/bird.gif">
+</div>
+
+<br />
+
+<div style="border: solid black;">
+    <img style="vertical-align: middle;" alt="test inline with block" src="images/bird.gif">
+    <span style="border: solid red;"> this is inline element</span>
+</div>
+
+<br />
+
+<div style="border: solid black;">
+    <span> this is inline element</span>
+    <span style="border: solid red; vertical-align: -20px;"> this is inline element</span>
+    <span> this is inline element</span>
+</div>
+
+<br />
+
+<div style="border: solid black;">
+    <span> this is inline element</span>
+    <img style="vertical-align: middle;" alt="test inline with block" src="images/bird.gif">
+    <span> this is inline element</span>
+    <span style="vertical-align: -10px;font-weight: bold;font-style: italic"> this is sub element</span>
+    <span> this is inline element</span>
+</div>
+
+<br />
+
+<div class="grid5 center" style="border: red solid;">
+    <span style="border: green solid;vertical-align: 20px;">baseline</span>
+    <img style="border: green solid;vertical-align: middle;"width="216" height="37" src="images/logo.png" alt="web site logo" title="my logo">
+    <img style="border: green solid;vertical-align: middle;" width="116" height="100" src="images/header-triangle.png" alt="web site logo"
+         title="my logo">
+</div>
+
+<br />
+
+<div class="grid5 center" style="border: red solid;">
+    <span style="border: green solid;vertical-align: 50px;">baseline</span>
+    <img  width="216" height="37" src="images/logo.png" alt="web site logo" title="my logo">
+    <img  width="116" height="100" src="images/header-triangle.png" alt="web site logo"
+         title="my logo">
+</div>
+
+<br />
+
+<div class="container">
+    <div class="grid5 center">
+        <img class="logo" width="216" height="37" src="images/logo.png" alt="web site logo" title="my logo">
+        <img class="triangle" width="116" height="100" src="images/header-triangle.png" alt="web site logo"
+             title="my logo">
+    </div>
+</div>
+
+
+</body>
+</html>

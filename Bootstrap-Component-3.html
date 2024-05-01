@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bootstrap Component 3</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+    <!-- Bootstrap -->
+    <!--    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+
+    <style>
+
+        .mt-100 {
+            margin-top: 100px
+        }
+
+        /*body {*/
+        /*    background: #00B4DB;*/
+        /*    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);*/
+        /*    background: linear-gradient(to right, #0083B0, #00B4DB);*/
+        /*    color: #514B64;*/
+        /*    min-height: 100vh*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+
+
+            <div class="dropdown">
+                <button class="btn border border-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                    <span style="font-size: 0.9rem; font-weight: 800 ">Select Country ... </span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+
+                    <div class="dropdown-divider"></div>
+                    <div class="form-group pl-4 border border-dark">
+                        <div class="form-check pb-2">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                            <label class="form-check-label" for="dropdownCheck">
+                                Remember me 2
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+<h1>Form Example</h1>
+
+<div class="container">
+    <form method="post" action="do-action">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="fullName" placeholder="Enter Full Name">
+                    <small id="fullName" class="form-text text-muted">We'll never share your full name with anyone else.</small>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>
+        </div> <!--end of row tag -->
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password Large</label>
+                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-end">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out (Vertical Alignment: align-self-end)</label>
+                </div>
+            </div>
+
+        </div>  <!--yet another end of row tag -->
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Password2</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-end">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Check me out (No Vertical Alignment)</label>
+                </div>
+            </div>
+
+        </div>  <!--yet another end of row tag -->
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="exampleInputPassword3">Password3</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-center">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                    <label class="form-check-label" for="exampleCheck4">Check me out (Vertical Alignment: align-self-center)</label>
+                </div>
+            </div>
+
+        </div>  <!--yet another end of row tag -->
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Password4</label>
+                    <input type="password" class="form-control" id="exampleInputPassword4">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-start">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                    <label class="form-check-label" for="exampleCheck5">Check me out (Vertical Alignment: align-self-start)</label>
+                </div>
+            </div>
+
+        </div>  <!--yet another end of row tag -->
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="exampleInputPassword5">Password5</label>
+                    <input type="password" class="form-control" id="exampleInputPassword5">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+            </div>
+
+        </div>  <!--yet another end of row tag -->
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <input class="form-control form-control-lg d-none d-lg-block" type="text" placeholder=".form-control-lg">
+                    <input class="form-control d-none d-md-block d-lg-none" type="text" placeholder="Default medium input">
+                    <input class="form-control form-control-sm d-md-none d-sm-block d-xs-block" type="text" placeholder=".form-control-sm">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>  <!--yet another end of row tag -->
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>  <!--end of container tag-->
+
+<br />
+<br />
+
+<h2>Inline Form Example</h2>
+
+<div class="container">
+    <form class="form-inline">
+        <div class="row">
+            <div class="form-group mb-2">
+                <label for="staticEmail2" class="sr-only">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+        </div>
+    </form>
+</div>
+
+
+<br />
+<br />
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="formControlRange">Example Range input</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+        </div>
+    </form>
+</div>
+
+<br/>
+<br/>
+
+<input type="checkbox" value="" id="defaultCheck1">
+<label>check here</label>
+
+<br/>
+<br/>
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Check me out
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+
+<br/>
+<br/>
+
+<div class="container border border-danger">
+    <form class="form-inline">
+        <div class="row border border-dark">
+            <div class="form-group mb-2">
+                <label for="staticEmail2" class="sr-only">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+        </div>
+    </form>
+</div>
+
+<br/>
+<br/>
+
+<div class="container border border-danger">
+    <form class="form-inline">
+        <div class="form-row border border-dark">
+            <div class="form-group mb-2">
+                <label for="staticEmail2" class="sr-only">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+        </div>
+    </form>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="container">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+
+        <div class="col-auto my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+
+    </form>
+</div>
+
+<br/>
+<br/>
+
+
+
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom04">State</label>
+            <select class="custom-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+                You must agree before submitting.
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<br />
+<br />
+
+<form class="was-validated">
+    <div class="mb-3">
+        <label for="validationTextarea">Textarea</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+        <div class="invalid-feedback">
+            Please enter a message in the textarea.
+        </div>
+    </div>
+
+    <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+        <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+        <div class="invalid-feedback">Example invalid feedback text</div>
+    </div>
+
+    <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+        <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+    </div>
+    <div class="custom-control custom-radio mb-3">
+        <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+        <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+        <div class="invalid-feedback">More example invalid feedback text</div>
+    </div>
+
+    <div class="mb-3">
+        <select class="custom-select" required>
+            <option value="">Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+    </div>
+
+    <div class="custom-file mb-3">
+        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+        <div class="invalid-feedback">Example invalid custom file feedback</div>
+    </div>
+
+    <div class="mb-3">
+        <div class="input-group is-invalid">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+            </div>
+            <input type="text" class="form-control is-invalid" aria-describedby="validatedInputGroupPrepend" required>
+        </div>
+        <div class="invalid-feedback">
+            Example invalid input group feedback
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <div class="input-group is-invalid">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="validatedInputGroupSelect">Options</label>
+            </div>
+            <select class="custom-select" id="validatedInputGroupSelect" required>
+                <option value="">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="invalid-feedback">
+            Example invalid input group feedback
+        </div>
+    </div>
+
+    <div class="input-group is-invalid">
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
+            <label class="custom-file-label" for="validatedInputGroupCustomFile">Choose file...</label>
+        </div>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+    </div>
+    <div class="invalid-feedback">
+        Example invalid input group feedback
+    </div>
+</form>
+
+
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+
+    <br/> <br/> <br/> <br/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!--Make sure jQuery is loaded before bootstrap.min.js.-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+                removeItemButton: true,
+                maxItemCount:5,
+                searchResultLimit:5,
+                renderChoiceLimit:5
+            });
+
+
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Welcome to Bootstrap</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+    <!-- Bootstrap -->
+    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #031b2f;">
+
+<!--https://getbootstrap.com/docs/4.0/utilities/display/-->
+
+
+<!--<h1 style="width: 60%; margin: 20px auto; text-align: center;border-bottom: 2px black solid;background-color: aqua;font-size: 3em;-->
+<!--    font-weight: bold;">Bootstrap Display properties</h1>-->
+
+<div style="display: table;margin: 10px auto;">
+    <h1 style="text-align: center;border-bottom: 2px black solid;background-color: aqua;font-size: 3em;
+    font-weight: bold;padding-left: 15px;padding-right: 15px;padding-bottom: 5px;">Bootstrap Display properties</h1>
+</div>
+
+
+<div class="container" style="background-color: aqua;">
+    <h2>Determine the display of an element in bootstrap using d-*</h2>
+    <h3> Reference: <a href="https://getbootstrap.com/docs/4.0/utilities/display/">Bootstrap display property</a></h3>
+
+
+    <br/>
+    <br/>
+
+    <h1>Reference: <a href="https://www.youtube.com/watch?v=LWBTGPCbI4k"> https://www.youtube.com/watch?v=LWBTGPCbI4k</a></h1>
+    <hr />
+
+    <h1>Following elements displayed in:    </h1>
+    <p class="d-none d-sm-block">Displayed on Small and up</p>
+    <p class="d-none d-md-block">Displayed on Medium and up</p>
+    <p class="d-none d-lg-block">Displayed on Large and up</p>
+    <p class="d-none d-xl-block">Displayed on Extra Large and up</p>
+
+    <hr/>
+
+    <h1>Following elements displayed in:    </h1>
+    <span class="d-block d-sm-none">Displayed on Xtra-Small and down</span>
+    <span class="d-block d-md-none">Displayed on Small and down</span>
+    <span class="d-block d-lg-none">Displayed on Medium and down</span>
+    <span class="d-block d-xl-none">Displayed on Large and down</span>
+
+
+
+    <br/>
+    <br/>
+    <br/>
+
+    <hr/>
+
+
+    <div class="d-inline" style="background-color: purple"> This is Div One - Converted from Block display to inline
+        display
+    </div>
+    <div class="d-inline" style="background-color: hotpink"> This is Div two - Converted from Block display to inline
+        display
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <span class="d-block" style="background-color: purple;"> This is span One - Converted from inline display to block display</span>
+    <span class="d-block" style="background-color: hotpink;"> This is span two - Converted from inline display to block display</span>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <span class="d-none" style="background-color: purple;"> This is span One - Converted from inline display to none display</span>
+    <span class="d-none" style="background-color: hotpink;"> This is span two - Converted from inline display to none display</span>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <h3>Note that in the Flex display displays block element beside each other (As in below example)</h3>
+    <div style="display: flex;">
+        <h2 class="p-3">This is H2 Headline</h2>
+        <h2 class="p-3">This is H2 Headline</h2>
+        <h2 class="p-3">This is H2 Headline</h2>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <h1 class="d-none d-sm-block">Displayed in Small and up (medium, large)</h1>
+    <h2>class="d-none d-sm-block"</h2>
+    <p> d-none: Not displayed at all </p>
+    <p> d-sm-block: displayed as Block element in Small screens and up (medium, large, ... )</p>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <h1 class="d-none d-md-block">Displayed in medium and up (large, X-large ...) </h1>
+    <h2>class="d-none d-md-block"</h2>
+    <p> d-none: Not displayed at all </p>
+    <p> d-md-block: displayed as Block element in Medium screens and up (large, X-large, ... )</p>
+
+    <br/>
+    <br/>
+    <br/>
+
+</div>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!--Make sure jQuery is loaded before bootstrap.min.js.-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

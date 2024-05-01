@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ribbon</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #f7f7f7;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .card {
+            position: relative;
+            width: 16rem;
+            height: 22rem;
+            background-color: white;
+            border-radius: 0.8rem;
+            box-shadow: 0 1rem 2rem #0002; /*h-offset v-offset blur spread color */
+        }
+
+        .card .ribbon {
+            position: absolute;
+            width: 8rem;
+            height: 8rem;
+            left: -0.8rem;
+            top: -0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            overflow: hidden;
+            /*border: 0.1rem solid crimson;*/
+        }
+
+        .card .ribbon::before {
+            position: absolute;
+            content: "New";
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            width: 145%;
+            height: 2rem;
+            background: linear-gradient(to right, blue, cyan);
+            color: white;
+            text-align: center;
+            line-height: 2rem;
+            transform: rotate(-45deg) translateY(-1rem);
+        }
+
+        .card .ribbon::after {
+            position: absolute;
+            content: "";
+            width: 0.8rem;
+            height: 0.8rem;
+            background: navy;
+            bottom: 0;
+            left: 0;
+            z-index: -100;
+            box-shadow: 7.2rem -7.2rem navy;   /* 7.2 = 8 - 0.2 */
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="card">
+    <span class="ribbon"></span>
+</div>
+
+
+</body>
+</html>

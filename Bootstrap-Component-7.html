@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bootstrap Component 7</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+    <!-- Bootstrap -->
+    <!--    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+
+    <style>
+
+        .text-decoration-line-through {
+            text-decoration: line-through;
+        }
+
+        .text-decoration-overline {
+            text-decoration: overline;
+        }
+
+        .text-decoration-underline {
+            text-decoration: underline;
+        }
+
+        .text-decoration-underline-overline {
+            text-decoration: underline overline;
+        }
+
+        .collection {
+            /* these styles are optional here, you might not need/want them */
+            /*margin-top: -1px;*/
+            /*margin-left: -1px;*/
+        }
+
+        .collection .child {
+            outline: 1px solid; /* use instead of border */
+            margin-top: 1px;
+            margin-left: 1px;
+        }
+
+    </style>
+</head>
+<body class="p-3">
+
+
+<div style="width: 200px;height: 200px" class="border border-right-0 border-info">
+    border border-right-0 border-info
+</div>
+
+<br/>
+<br/>
+
+<div style="width: 200px;height: 200px" class="border border-info rounded">
+    border border-info rounded
+</div>
+
+<br/>
+<br/>
+
+<div style="width: 200px;height: 200px" class="border border-info rounded-top">
+    border border-info rounded-top
+</div>
+
+<br/>
+<br/>
+
+<div style="width: 200px;height: 100px" class="border border-info rounded-circle">
+    border border-info rounded-circle
+</div>
+
+<br/>
+<br/>
+
+<div style="width: 200px;height: 100px" class="border border-info rounded-pill">
+    border border-info rounded-pill
+</div>
+
+<br/>
+<br/>
+
+<div style="width: 200px;height: 100px" class="border border-info rounded-sm">
+    border border-info rounded-sm
+</div>
+
+<br/>
+<br/>
+
+<div style="width: 200px;height: 100px" class="border border-info rounded-lg">
+    border border-info rounded-lg
+</div>
+
+<br/>
+<br/>
+
+<div class="bg-info clearfix">
+    <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+    <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+</div>
+
+<br/>
+<br/>
+
+<button type="button" class="close" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+
+<br/>
+<br/>
+
+
+<div class="d-inline p-2 bg-primary text-white">d-inline</div>
+<div class="d-inline p-3 bg-primary text-white border rounded">d-inline</div>
+<div class="d-inline p-2 bg-dark text-white">d-inline</div>
+
+<br/>
+<br/>
+<br/>
+
+<span class="d-block d-md-inline p-2 bg-primary text-white">d-block</span>
+<span class="d-block p-2 bg-primary text-white">d-block</span>
+
+<br/>
+<br/>
+<br/>
+
+<span class="d-md-none d-lg-block p-2 bg-primary text-white">d-texttttt</span>
+
+<br/>
+<br/>
+
+<!-- 21:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-21by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+</div>
+
+<br/>
+<br/>
+
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+</div>
+
+<br/>
+<br/>
+
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+</div>
+
+<br/>
+<br/>
+
+<!-- 1:1 aspect ratio -->
+<div class="embed-responsive embed-responsive-1by1">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+</div>
+
+<br/>
+<br/>
+
+<p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+<p class="user-select-auto">This paragraph has the default select behavior.</p>
+<p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+<br/>
+<br/>
+
+<div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+<br/>
+<div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+<br/>
+<div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+<br/>
+<div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+
+<br/>
+<br/>
+
+<div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+<div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+<div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+
+<br/>
+<br/>
+
+<div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+    <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+    <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+    <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+    <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+    <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+</div>
+
+<br/>
+<br/>
+
+<!--<div class="min-vw-100">Min-width 100vw</div>-->
+<!--<div class="min-vh-100">Min-height 100vh</div>-->
+<!--<div class="vw-100">Width 100vw</div>-->
+<!--<div class="vh-100">Height 100vh</div>-->
+
+<!--<br/>-->
+<!--<br/>-->
+
+<div class="row mx-md-n5 bg-info">
+    <div class="col px-md-5">
+        <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col px-md-5">
+        <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row bg-info">
+    <div class="col px-md-5">
+        <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col px-md-5">
+        <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row mx-md-n5 bg-info">
+        <div class="col px-md-5">
+            <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col px-md-5">
+            <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row bg-info">
+        <div class="col px-md-5">
+            <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col px-md-5">
+            <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+<div class="card" style="width: 18rem;">
+    <img src="images/clavinet.jpg" class="img-fluid m-2 rounded" alt="...">
+    <div class="card-body">
+        <h5 class="card-title" style="font-weight: 600">Card with stretched link</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<p>Some placeholder text to demonstrate justified text alignment. Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+
+<br/>
+<br/>
+
+<p class="text-justify">Some placeholder text to demonstrate justified text alignment. Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+
+<br/>
+<br/>
+
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+
+<br/>
+<br/>
+
+<div class="badge badge-primary text-wrap" style="width: 6rem;">
+    This text should wrap.
+</div>
+
+<br/>
+<br/>
+
+<div class="text-nowrap bd-highlight" style="width: 8rem;">
+    This text should overflow the parent.
+</div>
+
+<br/>
+<br/>
+
+<!-- Block level -->
+<div class="row">
+    <div class="col-2 text-truncate">
+        Praeterea iter est quasdam res quas ex communi.
+    </div>
+</div>
+
+<!-- Inline level -->
+<span class="d-inline-block text-truncate" style="max-width: 150px;" data-toggle="tooltip"
+      title="Praeterea iter est quasdam res quas ex communi.">
+  Praeterea iter est quasdam res quas ex communi.
+</span>
+
+<br />
+
+<span class="d-inline-block text-break" style="max-width: 150px;" data-toggle="tooltip"
+      title="Praeterea iter est quasdam res quas ex communi.">
+  Praeterea iter est quasdam res quas ex communi.
+</span>
+
+
+<br/>
+<br/>
+
+<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+<br/>
+<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+<br/>
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+
+<br/>
+<br/>
+
+<p class="font-weight-bold">Bold text.</p>
+<p class="font-weight-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="font-weight-normal">Normal weight text.</p>
+<p class="font-weight-light">Light weight text.</p>
+<p class="font-weight-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="font-italic">Italic text.</p>
+
+<p class="text-monospace">This is in monospace</p>
+
+<p class="text-muted">
+    Muted text with a <a href="#" class="text-reset">reset link</a>.
+</p>
+
+<a href="#" class="text-decoration-none">Non-underlined link</a>
+
+<p class="text-decoration-none">Non-underlined text</p>
+<p class="text-decoration-line-through">Text text</p>
+<p class="text-decoration-overline">Text text</p>
+<p class="text-decoration-underline">Text text</p>
+<p class="text-decoration-underline-overline">Text text</p>
+
+
+<p class="text-decoration-none">Non-underlined<span class="font-italic" style="vertical-align: -5px;font-size: 0.8em;"> data</span> text</p>
+
+<br/>
+<br/>
+
+<span class="align-baseline">baseline</span>
+<span class="align-top">top</span>
+<span class="align-middle">middle</span>
+<span class="align-bottom">bottom</span>
+<span class="align-text-top">text-top</span>
+<span class="align-text-bottom">text-bottom</span>
+
+
+<br/>
+<br/>
+
+<table style="height: 100px;">
+    <tbody>
+    <tr>
+        <td class="align-baseline">baseline</td>
+        <td class="align-top">top</td>
+        <td class="align-middle">middle</td>
+        <td class="align-bottom">bottom</td>
+        <td class="align-text-top">text-top</td>
+        <td class="align-text-bottom">text-bottom</td>
+    </tr>
+    </tbody>
+</table>
+
+<br/>
+<br/>
+
+<div class="visible"> this is visible section </div>
+<div class="invisible">...</div>
+
+<br/>
+<br/>
+
+
+<div class="collection">
+    <div class="child">mina</div>
+    <div class="child">mina</div>
+    <div class="child">mina</div>
+    <div class="child">mina</div>
+</div>
+
+
+
+<br/> <br/> <br/> <br/>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+<!--Make sure jQuery is loaded before bootstrap.min.js.-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>-->
+<script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+
+
+<script>
+
+    $('[data-toggle="tooltip"]').tooltip({
+    });
+
+</script>
+
+
+</body>
+</html>

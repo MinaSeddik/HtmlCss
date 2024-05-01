@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Collapsable Table</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+
+    <style>
+
+        .table-row {
+            cursor: pointer;
+        }
+
+        .active, .table-row:hover {
+            background-color: #ccc;
+        }
+
+
+        .data {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Column-1</th>
+        <th>Column-2</th>
+        <th>Column-3</th>
+    </tr>
+    </thead>
+    <tr class="table-row">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <div class="data">More info on 1</div>
+    <tr class="table-row">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <div class="data">More info on 2</div>
+</table>
+
+
+<script>
+
+
+    var acc = document.getElementsByClassName("table-row");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+
+</body>
+</html>

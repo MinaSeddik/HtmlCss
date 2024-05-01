@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Collapsable Table with Bootstrap</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+
+
+    <!-- Bootstrap 5 -->
+    <!--    <link type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!--  Using CDN -->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+
+    <!--    font Awesome icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--    Bootstrap icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<h1> Collapsable table 1</h1>
+
+<div class="container">
+    <div class="row">
+
+        <table class="table">
+            <thead data-bs-toggle="collapse" href="#collapseExample" style="cursor: pointer;">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody class="collapse" id="collapseExample">
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h1> Collapsable table 2</h1>
+
+<div class="container">
+    <div class="row">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            <tr data-bs-toggle="collapse" href="#row1" style="cursor: pointer;">
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr class="collapse" id="row1">
+                <td colspan="4">
+                    <div> Data goes here!</div>
+                </td>
+            </tr>
+
+
+            <tr data-bs-toggle="collapse" href="#row2" style="cursor: pointer;">
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr class="collapse" id="row2">
+                <td colspan="4">
+                    <div> Data 2 goes here!</div>
+                </td>
+            </tr>
+
+
+            <tr data-bs-toggle="collapse" href="#row3" style="cursor: pointer;">
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr class="collapse" id="row3">
+                <td colspan="4">
+                    <div> Data 3 goes here!</div>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h1> Collapsable table 3 using Bootstrap Accordion</h1>
+
+<div class="container">
+    <div class="vstack gap-3s">
+        <div class="row py-3" style="background-color: dodgerblue;color: white;font-weight: 600;">
+
+
+            <!-- Hide Name in small and down  (smaller than medium) -->
+            <div class="col d-none d-md-block">Name
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </div>
+
+            <!-- order date-time - Show up in all screen sizes -->
+            <div class="col ">Order DateTime
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <!-- Hide order type in small and down  (smaller than medium) -->
+            <div class="col d-none d-md-block">Order Type
+                <!--            use font-awesome icons with different styles and classes -->
+                <i class="fa fa-car" style="color: red;font-size: 1.2rem"></i>
+<!--                <i class="fa fa-car fa-lg"></i>-->
+                <i class="fa fa-car fa-2x fa-pull-left"></i>
+                <i class="fa fa-car fa-2x fa-pull-right"></i>
+            </div>
+
+            <!-- Hide total fees in small and down  (smaller than medium) -->
+            <div class="col d-none d-md-block">Total Fees
+                <i class="bi bi-arrow-down-short"></i>
+                <i class="bi bi-universal-access"></i>
+                <i class="bi bi-award-fill" style="color: yellowgreen;font-size: 1.3rem;"></i>
+            </div>
+
+            <!-- Hide status in x-small  (smaller than small) -->
+            <div class="col d-none d-sm-block">Status</div>
+        </div>
+
+
+        <!--    Row example   -->
+        <div class="row">
+            <div class="accordion accordion-flush px-0" id="accordionFlushExample">
+
+                <!-- Row #1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#table-row1" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <div class="col d-none d-md-block">Mina Ibrahim </div>
+                            <div class="col">04/02/2024 03:15 PM</div>
+                            <div class="col d-none d-md-block">FBI</div>
+                            <div class="col d-none d-md-block"> $40</div>
+                            <div class="col d-none d-sm-block">New</div>
+                        </button>
+                    </h2>
+                    <div id="table-row1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+
+                <!-- Row #2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#table-row2" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <div class="col d-none d-md-block">Mark Buddman </div>
+                            <div class="col">24/03/2024 03:15 PM</div>
+                            <div class="col d-none d-md-block">Print-to-Card</div>
+                            <div class="col d-none d-md-block"> $50</div>
+                            <div class="col d-none d-sm-block">Complete</div>
+                        </button>
+                    </h2>
+                    <div id="table-row2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+
+
+                <!-- Row #3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#table-row3" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <div class="col d-none d-md-block">John Smith </div>
+                            <div class="col">24/13/2024 03:15 PM</div>
+                            <div class="col d-none d-md-block">California</div>
+                            <div class="col d-none d-md-block"> $50</div>
+                            <div class="col d-none d-sm-block">New</div>
+                        </button>
+                    </h2>
+                    <div id="table-row3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>-->
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>-->
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+
+
+<noscript>Your browser does not support JavaScript!</noscript>
+
+</body>
+</html>

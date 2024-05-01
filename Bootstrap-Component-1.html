@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bootstrap Component 1</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+    <!-- Bootstrap -->
+    <!--    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .opacity-100 {
+            opacity: 1;
+        }
+
+        .opacity-75 {
+            opacity: .75;
+        }
+
+        .opacity-50 {
+            opacity: .5;
+        }
+
+        .opacity-25 {
+            opacity: .25;
+        }
+
+        .opacity-0 {
+            /*opacity: 0;*/
+            opacity: 0.1;
+        }
+
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            /*content: "\f101" !important;*/
+            content: ">" !important;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="alert alert-secondary" role="alert">
+                A simple primary alert—check it out!
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+        that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+
+<div id="my-alert1" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div>
+    <button onclick="showAlert()" class="btn btn-info"> show alert</button>
+</div>
+
+
+<h2> Test opacity </h2>
+<div class="alert alert-primary opacity-100" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<div class="alert alert-primary opacity-75" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<div class="alert alert-primary opacity-50" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<div class="alert alert-primary opacity-25" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<div class="alert alert-primary opacity-0" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<br/>
+<br/>
+
+<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+<h3>Example heading <span class="badge badge-secondary">New</span></h3>
+<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+
+
+<button type="button" class="btn btn-primary">
+    Notifications <span class="badge badge-light">4</span>
+</button>
+
+<button type="button" class="btn btn-danger rounded-circle">
+    <span class="badge badge-danger"><b>2+</b></span>
+</button>
+
+<br/>
+<br/>
+
+<a href="#" class="badge badge-primary">Primary</a>
+<a href="#" class="badge badge-secondary">Secondary</a>
+<a href="#" class="badge badge-success">Success</a>
+<a href="#" class="badge badge-danger">Danger</a>
+<a href="#" class="badge badge-warning">Warning</a>
+<a href="#" class="badge badge-info">Info</a>
+<a href="#" class="badge badge-light">Light</a>
+<a href="#" class="badge badge-dark">Dark</a>
+
+<br/>
+<br/>
+
+<nav>
+    this is nav tag
+</nav>
+
+<nav>
+    this is nav tag2
+</nav>
+
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+</nav>
+
+<br/>
+<br/>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+<br/>
+<br/>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 border border-dark text-center">
+            <button type="button" class="btn btn-primary">Center Primary 1</button>
+        </div>
+        <div class="col-md-4 border border-danger text-left">
+            <button type="button" class="btn btn-primary">Left Primary 2</button>
+        </div>
+        <div class="col-md-4 border border-info text-right">
+            <button type="button" class="btn btn-primary">Right Primary 3</button>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 border border-dark">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+        </div>
+        <div class="col-md-4 border border-danger">
+            <button class="btn btn-primary" type="submit">Button</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <input class="btn btn-primary" type="button" value="Input">
+        </div>
+        <div class="col-md-4 border border-danger">
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+        <div class="col-md-4 border border-info">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-primary">Fairly long text in the button</button>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 border border-dark">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+        </div>
+        <div class="col-md-4 border border-danger">
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-outline-success"><span style="font-weight: 600">Success</span></button>
+        </div>
+        <div class="col-md-4 border border-danger">
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-outline-info">Info</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-outline-light">Light</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 border border-dark">
+            <button class="btn btn-primary" type="submit">Normal Button</button>
+        </div>
+        <div class="col-md-4 border border-danger">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        </div>
+        <div class="col-md-4 border border-danger">
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+        </div>
+        <div class="col-md-4 border border-danger">
+            <button type="button" class="btn btn-outline-primary btn-lg">Large outline button</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <!--        <div class="col-md-4 offset-md-4 border border-info">-->
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        </div>
+        <div class="col-md-4 border border-info">
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+        </div>
+
+    <div class="w-100"></div>
+
+    <div class="col-md-4 border border-info">
+        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Large button - Active</a>
+    </div>
+    <div class="col-md-4 border border-info">
+        <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Large Link - Active</a>
+    </div>
+
+        <div class="w-100"></div>
+
+    <div class="col-md-4 border border-info">
+        <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-pressed="true">Large button - Disabled</a>
+    </div>
+    <div class="col-md-4 border border-info">
+        <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-pressed="true">Large Link - Disabled</a>
+    </div>
+
+        <div class="w-100"></div>
+
+    <div class="col-md-4 border border-info">
+        <a class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+    </div>
+    <div class="col-md-4 border border-info">
+        <a class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+    </div>
+        <div class="w-100"></div>
+
+    <div class="col-md-4 border border-info">
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="checkbox" checked> Checked
+            </label>
+        </div>
+    </div>
+    <div class="col-md-4 border border-info">
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="checkbox" checked> Checked
+            </label>
+        </div>
+    </div>
+
+    <div class="w-100"></div>
+
+    <div class="col-md-4 border border-info">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" checked> All
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2"> Yes
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3"> No
+            </label>
+        </div>
+    </div>
+
+
+</div>
+
+<br/>
+<br/>
+
+<h2>Button Group</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 border border-dark">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 border border-dark">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-secondary">Download</button>
+                <button type="button" class="btn btn-secondary">Export CSV file</button>
+                <button type="button" class="btn btn-secondary">Retrieve</button>
+                <button type="button" class="btn btn-secondary">View Scores</button>
+
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        more actions ...
+                    </button>
+<!--                    <div class="dropdown-menu" style="background-color: dodgerblue">-->
+                    <div class="dropdown-menu bg-secondary">
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
+<br/> <br/> <br/> <br/>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+<!--Make sure jQuery is loaded before bootstrap.min.js.-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+
+<script>
+
+    function showAlert() {
+        const alertElement = document.getElementById("my-alert1");
+        console.log("Element: " + alertElement);
+        alertElement.classList.replace("d-none", "d-block");
+
+        // setTimeout(function() {
+        //     alertElement.classList.replace("d-block", "d-none");
+        // }, 2000);
+
+        const style = alertElement.style;
+        style.opacity = 1;
+        (function fade() {
+            (style.opacity -= .1) < 0 ?
+                alertElement.classList.replace("d-block", "d-none") : setTimeout(fade, 500)
+            // style.display = "none" : setTimeout(fade, 40)
+        })();
+
+
+    }
+</script>
+
+
+</body>
+</html>

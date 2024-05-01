@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ribbon</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #f7f7f7;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .card {
+            position: relative;
+            width: 16rem;
+            height: 22rem;
+            background-color: white;
+            border-radius: 0.8rem;
+            box-shadow: 0 1rem 2rem #0002; /*h-offset v-offset blur spread color */
+        }
+
+        .card .ribbon {
+            position: absolute;
+            width: 90%;
+            height: 3rem;
+            left: -1.1rem;
+            top: 1.6rem;
+            background: linear-gradient(to right, blue, cyan);
+            color: white;
+            text-align: center;
+            line-height: 3rem;
+            font-weight: 600;
+            border-radius: 2rem;
+            border-bottom-left-radius: 0;
+        }
+
+        .card .ribbon::before,
+        .card .ribbon::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 3rem;
+            width: 1.1rem;
+            height: 2rem;
+            border-bottom-left-radius: 1rem;
+        }
+
+        .card .ribbon::before {
+            background-color: blue;
+        }
+
+        .card .ribbon::after {
+            background-color: navy;
+            border-top-left-radius: 1rem;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="card">
+    <span class="ribbon">For Sale</span>
+</div>
+
+
+</body>
+</html>

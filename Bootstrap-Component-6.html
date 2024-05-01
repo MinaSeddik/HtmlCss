@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mina Ibrahim">
+
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bootstrap Component 6</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+    <!-- Bootstrap -->
+    <!--    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+
+    <style>
+
+        .bg-blue {
+            background-color: #7ebdfa;
+        }
+
+        .bg-blue {
+            background-color: #7ebdfa;
+        }
+
+        .pl-6 {
+            padding-left: 10%;
+        }
+
+
+        .overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 991000;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            /*filter: alpha(opacity=50);*/
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tooltip-custom{
+            background-color: dodgerblue;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-expand-md navbar-light bg-light">-->
+<!--<nav class="navbar navbar-expand-md navbar-light bg-warning">-->
+<nav class="navbar navbar-expand-md sticky-top navbar-light bg-blue">
+    <a class="navbar-brand pl-6" href="#">Navbar (LOGO)</a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse border border-info flex-wrap" id="navbarSupportedContent">
+        <ul class="navbar-nav  border border-danger">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline ml-auto my-2 my-lg-0 border border-danger">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+                <b>Search</b></button>
+        </form>
+    </div>
+</nav>
+
+<br/>
+<br/>
+
+<h2>Inside container</h2>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="images/clavinet.jpg" alt="..." width="100"
+                                              height="65">
+            <span>MY LOGO</span>
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                       aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<br/>
+data <br/>
+data <br/>
+data <br/>
+data <br/>
+data <br/>
+data <br/>
+data
+<br/>
+<br/>
+
+<div class="container"></div>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<br/>
+<br/>
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover"
+        title="Popover title"
+        data-content="And here's some amazing content. It's very engaging. Right?">
+    Click to toggle popover
+</button>
+
+<br/>
+<br/>
+
+<div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<br/>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+         aria-valuemax="100"></div>
+</div>
+<br/>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+         aria-valuemax="100"></div>
+</div>
+<br/>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 33%"
+         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        33%
+    </div>
+</div>
+<br/>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%
+    </div>
+</div>
+<br/>
+<div class="progress" style="height: 1px;">
+    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+         aria-valuemax="100"></div>
+</div>
+<br/>
+<div class="progress" style="height: 30px;">
+    <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+         aria-valuemax="100"></div>
+</div>
+
+
+<br/>
+<br/>
+
+<div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+
+<br/>
+
+<div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-success" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-danger" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-info" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-light" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-dark" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+
+<br/>
+
+<div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<br/>
+
+<div class="overlay d-none">
+    <div class="d-flex justify-content-center">
+        <!--        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; z-index: 20;">-->
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+    <div aria-live="polite" aria-atomic="true" class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+
+        <div class="toast show border border-info" role="alert" aria-live="assertive" aria-atomic="true" >
+            <div class="toast-header">
+                <img src="images/add.gif" class="rounded mr-2" alt="...">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small class="text-muted">just now</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                See? Just like this.
+            </div>
+        </div>
+
+
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-delay="500">
+            <div class="toast-header">
+                <img src="images/add.gif" class="rounded mr-2" alt="...">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small class="text-muted">2 seconds ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Heads up, toasts will stack automatically Heads up, toasts will stack automatically Heads up, toasts
+                will stack automatically
+            </div>
+        </div>
+
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="images/add.gif" class="rounded mr-2" alt="...">
+                <strong class="mr-auto">New Product Added</strong>
+                <small class="text-muted">23 seconds ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Heads up, old one
+            </div>
+        </div>
+
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="images/add.gif" class="rounded mr-2" alt="...">
+                <strong class="mr-auto">New Product Added</strong>
+                <small class="text-muted">23 seconds ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Heads up, old one
+            </div>
+        </div>
+
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="images/add.gif" class="rounded mr-2" alt="...">
+                <strong class="mr-auto">New Product Added</strong>
+                <small class="text-muted">23 seconds ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Heads up, old one
+            </div>
+        </div>
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="images/add.gif" class="rounded mr-2" alt="...">
+                <strong class="mr-auto">New Product Added</strong>
+                <small class="text-muted">23 seconds ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Heads up, old one
+            </div>
+        </div>
+
+<!--    </div>-->
+
+</div>
+
+<br/>
+<br/>
+
+
+<!-- HTML to write -->
+<a href="#" data-toggle="tooltip" title="Some tooltip textssssssss!">Hover over me</a>
+
+
+<label data-toggle="tooltip" title="Some tooltip Address!">Address</label>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip bs-tooltip-top" role="tooltip">
+    <div class="arrow"></div>
+    <div class="tooltip-inner">
+        Some tooltip text!
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+
+<br/> <br/> <br/> <br/>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+<!--Make sure jQuery is loaded before bootstrap.min.js.-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>-->
+<script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+
+
+<script>
+
+    // $(function () {
+    //     $('[data-toggle="popover"]').popover()
+    // })
+
+    function option() {
+
+    }
+
+    $('.toast').toast(option);
+
+    // $(function () {
+    //     $('[data-toggle="tooltip"]').tooltip()
+    // });
+
+    $('[data-toggle="tooltip"]').tooltip({
+        // template: '<div class="tooltip tooltip-custom"><div class="title">Test</div><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+        template: '<div class="tooltip tooltip-custom"><div class="title"></div><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+    });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+h1{
+    color: red;
+}
+
+h2{
+    color: green;
+}
+
+h3{
+    color: blue;
+}
+
+p {
+    font-weight: bold;
+    font-size: 120%
+}
+
+@media (max-width: 500px){
+
+    h1{
+        color: deeppink;
+    }
+
+    h2{
+        color: black;
+    }
+
+    h3{
+        color: purple;
+    }
+
+    p {
+        font-size: 90%;
+        background-color: #ee3e80;
+    }
+
+}
+
+/*@media screen and (min-width:480px) and (max-width:800px) {*/
+/*}*/
+/*@media screen and (max-width:479px) {*/
+/*}*/
+/*@media screen and (max-width: 800px) {*/
+/*}*/
+/*@media screen and (max-width: 479px) {*/
+/*}*/
+/*@media all and (orientation: landscape) {*/
+/*}*/
+/*@media all and (orientation: portrait) {*/
+/*}*/
+
+@media print {
+
+    h1, h2, h3{
+        color: #435780;
+        background-color: #ee3e80;
+    }
+
+    p {
+        font-size: 90%
+        background-color: #ee3e80;
+    }
+
+}
+
+/*@media (orientation: portrait) {}*/
+@media (orientation: landscape) {
+
+    p {
+        font-size: 90%;
+        background-color: #95969d;
+    }
+
+}
