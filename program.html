@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to JavaScript</title>
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico.png">
+</head>
+<body>
+
+<h1> Reference: <a href="https://exploringjs.com/es6/index.html" target="_blank">
+    https://exploringjs.com/es6/index.html </a> </h1>
+
+<p id="demo">Data</p>
+<br />
+
+<p id="demo2">Data2</p>
+<br />
+
+<p id="demo3">Data3</p>
+<br />
+
+
+<div id="div1"></div>
+<script>
+    document.writeln(Date());
+</script>
+
+<br />
+<img id="myImage" src="images/clavinet.jpg"/>
+<br />
+<button id="myButton" style="background-color: dodgerblue; border: #2a0845;"> click Me </button>
+<pre>
+    <script type="text/javascript"></script>
+    <script type="application/javascript"></script>
+
+    <script src="JavaScript/program.js"></script>
+    <script src="JavaScript/program-2.js"></script>
+    <script src="JavaScript/program-3.js"></script>
+
+    <script type="module" src="./JavaScript/program-4.js"></script>
+    <script type="module" src="./JavaScript/program-5.js"></script>
+    <script type="module" src="./JavaScript/program-6.js"></script>
+    <script type="module" src="./JavaScript/program-7.js"></script>
+    <script type="module" src="./JavaScript/program-8.js"></script>
+
+
+    <script type="module" import="impl/main"></script>
+
+    <script type="module">
+    import $ from './JavaScript/lib/my-jquery.js';
+    var x = 123;
+
+    // The current scope is not global
+    // console.log('$' in window); // false
+    // console.log('x' in window); // false
+
+    // `this` is undefined
+    // console.log(this === undefined); // true
+</script>
+
+</pre>
+
+<script>
+    // const myTimeout = setTimeout(myGreeting, 5000);
+
+    function myGreeting() {
+        // document.getElementById("demo").innerHTML = "Happy Birthday!"
+    }
+
+    function myStopFunction() {
+        // clearTimeout(myTimeout);
+    }
+</script>
+
+</body>
+</html>
