@@ -2,9 +2,31 @@
   "name": "htmlcss",
   "version": "1.0.0",
   "description": "My Html, css, SCSS, JavaScript and more front-end training",
-  "main": "index.js",
+  "_main": "index.js",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "hello": "echo hello",
+    "prehello": "echo BEFORE",
+    "posthello": "echo AFTER",
+    "build": "rimraf dist && npx tsc",
+    "build-dev": "npx tsc -w",
+    "build-webpack": "",
+    "prestart": "echo 'HO..Ho ...' ",
+    "prets-start": "echo 'HO..Ho ...TS ' ",
+    "start": "node dist/src/main.js",
+    "ts-start": "ts-node ts/src/main.ts",
+    "clean": "shx rm -rf dist/*",
+    "build1": "tsc",
+    "watch": "tsc --watch",
+    "test": "mocha --ui qunit",
+    "testall": "mocha --ui qunit dist/test",
+    "prepack_": "npm run clean && npm run build",
+    "test2": "echo \"Error: no test specified\" && exit 1",
+    "your-package": "your-package",
+    "how-to-run-your-package": "node run your-package",
+    "how-to-run-test": "node run test",
+    "serve": "http-server build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +39,23 @@
   },
   "homepage": "https://github.com/MinaSeddik/HtmlCss#readme",
   "devDependencies": {
-    "sass": "^1.75.0"
+    "@types/jquery": "^3.5.30",
+    "@types/lodash": "^4.17.4",
+    "@types/node": "^20.12.12",
+    "copy-webpack-plugin": "^12.0.2",
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.75.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@hqoss/guards": "^0.0.3",
+    "cowsay": "^1.6.0",
+    "lodash": "^4.17.21"
   }
 }

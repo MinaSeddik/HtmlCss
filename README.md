@@ -24,3 +24,25 @@ Small: ≥576px .col-sm-
 Medium: ≥768px .col-md-  
 Large: ≥992px .col-lg-  
 Extra large: ≥1200px .col-xl-  
+
+npx tsc --init
+/usr/local/lib/node_modules
+/usr/local/bin
+
+
+
+## npm
+    npm help
+    npm config list
+    npm install
+    npm search
+    npm init
+    npm run <script-name>
+    npm pack
+    npm link
+    npm ls
+    npm rm
+    npm update
+    npm adduser
+    npm publish
+    
