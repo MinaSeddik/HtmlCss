@@ -49,10 +49,10 @@ function getValue(): string | undefined {
     return 'hello';
     // return undefined;
 }
-let value = getValue();
+let value3232 = getValue();
 // let dummy_val: any;
 // value = dummy_val;
-console.log('value length: ' + value!.length);
+console.log('value length: ' + value3232!.length);
 
 console.log('-----------------------------');
 

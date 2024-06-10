@@ -5,6 +5,7 @@
   "_main": "index.js",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
+  "type": "module",
   "scripts": {
     "hello": "echo hello",
     "prehello": "echo BEFORE",
@@ -55,7 +56,27 @@
   },
   "dependencies": {
     "@hqoss/guards": "^0.0.3",
+    "connect": "^3.7.0",
     "cowsay": "^1.6.0",
-    "lodash": "^4.17.21"
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "formidable": "^3.5.1",
+    "hogan.js": "^3.0.2",
+    "htmlparser": "^1.7.7",
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21",
+    "mime": "^4.0.3",
+    "mocha": "^10.4.0",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.0",
+    "mysql2": "^3.9.9",
+    "nimble": "^0.0.2",
+    "nodeunit": "^0.10.2",
+    "pg": "^8.11.5",
+    "redis": "^4.6.14",
+    "request": "^2.88.2",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "vows": "^0.8.3"
   }
 }

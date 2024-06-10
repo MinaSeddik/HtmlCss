@@ -33,7 +33,7 @@ function getPropertyValue(dict: unknown, key: string): any {
         // %inferred-type: object
         dict;
 
-        // @ts-expect-error: Element implicitly has an 'any' type because
+        //// @ts-expect-error: Element implicitly has an 'any' type because
         // expression of type 'string' can't be used to index type '{}'.
         // [...]
         dict[key];
